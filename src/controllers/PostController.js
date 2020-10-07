@@ -6,7 +6,6 @@ module.exports = {
     }, 
 
     async store(req, res) {
-        /*
         const { author, place, description, hashtags } = req.body;
         const { filename: image } = req.file;
         //console.log(req.body);
@@ -20,8 +19,8 @@ module.exports = {
         });
 
         return res.json(post);
-        */
-       return res.json({ ok: true });
+        
+       //return res.json({ ok: true });
     }
 };
 
