@@ -7,7 +7,9 @@
     "dev": "nodemon src/index.js"
   },
   "dependencies": {
-    "express": "^4.17.1"
+    "express": "^4.17.1",
+    "mongoose": "^5.10.8",
+    "react-native-firebase": "^5.6.0"
   },
   "devDependencies": {
     "nodemon": "^2.0.4"
