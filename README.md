@@ -43,7 +43,7 @@ $ cd backend
 $ yarn 
 
 # Rode o backend 
-$ yarn run 
+$ yarn start 
 ```
 
 
