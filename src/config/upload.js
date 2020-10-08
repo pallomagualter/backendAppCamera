@@ -6,10 +6,10 @@ module.exports = {
         destination: path.resolve(__dirname, '..', '..', 'uploads'),
         filename: (req, file, cb) => {
             
-            const extension = path.extname(file.originalname);
+            const extension = path.extname(file.originalname); 
             const name = path.basename(file.originalname, extension);
 
-            cb(null, `${name}-${Date.now()}${extension}`); //para garantir que a imagem senha única usamos o Date.now
+            cb(null, `${name}-${Date.now()}${extension}`); //para garantir que a imagem seja única usamos o Date.now
         }
     })
 };
