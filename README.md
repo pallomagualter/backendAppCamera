@@ -47,6 +47,22 @@ $ yarn
 $ yarn start 
 ```
 
+### :computer: Frontend: 
+
+```bash
+# Clone o Repositório
+$  git clone https://github.com/pallomagualter/appCameraWeb.git
+
+#Vá até a pasta frontend 
+$ cd frontend 
+
+#Instale as dependências
+$ yarn 
+
+#Inicie a aplicação 
+$ yarn start
+```
+
 
 ### :iphone: Mobile:
 
