@@ -32,6 +32,8 @@ module.exports = {
             image: fileName,
         });
 
+        req.io.emit('post', post); //irá emitir uma messagem para todas conectados em tempo real assim que salvar no banco que é o nosso post
+
         return res.json(post);
         
        //return res.json({ ok: true });

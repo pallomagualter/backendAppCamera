@@ -7,6 +7,8 @@ module.exports = {
         post.likes += 1;
 
         await post.save();
+
+        req.io.emit('like', post);  //contem a informação para o front-end e o dado da mensagem que no caso é o post
         
        return res.json(post);
     }
