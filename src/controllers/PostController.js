@@ -14,7 +14,7 @@ module.exports = {
             const { author, place, description, hashtags } = req.body
             const { filename: image } = req.file
             const [name] = image.split('.')
-            const fileName = `${name}.jpg`
+            const fileName = `${name}.jpg` //garantir que seja armazenada como jpg
             
             await sharp(req.file.path) //redimensionamento da imagem
                .resize(500) //definir 500pixel para imagem
@@ -22,14 +22,14 @@ module.exports = {
                .toFile( //caminho para imagem pos redimensionamento
                   path.resolve(req.file.destination, 'resized', fileName)
                )
-            fs.unlinkSync(req.file.path)
+            fs.unlinkSync(req.file.path); //para deletar a imagem no tamanho normal da pasta upload após o remensionamento e armazenamento na pasta resized
 
         const post = await Post.create({
             author,
             place,
             description, 
             hashtags,
-            image,
+            image: fileName,
         });
 
         return res.json(post);
