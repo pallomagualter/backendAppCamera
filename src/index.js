@@ -28,7 +28,7 @@ app.use(cors()); //para as aplicações possam acessar nossa api
 app.use(express.json());
 
 app.use('/files', express.static(path.resolve(__dirname, '..', 'uploads', 'resized'))); //para manipular arquivos estáticos
- k
+
 app.use(routes);
 
 server.listen(3333);
