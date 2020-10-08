@@ -5,6 +5,7 @@
 ## :computer: Projeto
 
 O appCamera é um aplicativo criado unicamente para estudo da funcionalidade expo-camera.
+Funcionalidades Back-end: salva imagem guardando o horário que ela foi salva no banco para posterior auditoria (caso seja necessário), lista imagens em ordem decrescente para ficar no topo da pilha de imagens sempre a última postada, redimensiona imagem com sharp, dar like em imagem, realtime com socket.io.
 
 
 ## :rocket: Tecnologias
